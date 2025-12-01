@@ -1,0 +1,16 @@
+.mybg{
+    background-image: url('choce_watch2.png.webp');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.myp h1{
+    text-align: center;
+    color: black;
+    align-items: center;
+
+}
+
