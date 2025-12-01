@@ -15,16 +15,25 @@ const Fetchdata = () => {
     })
 
     return (
-        <div>
-            {products.map((item) => (
-                <div>
-                    <h1>{item.title}</h1>
-                    <p>{item.description}</p>
-                    <p>{item.price}</p>
+       <div className='container'>
+        <div className='row'>
+            {products.map((item)=>(
+            <div className='col-md-4'> 
+            <div class="card" style={{width: "18rem"}}>
+  <img src={item.image} class="card-img-top" alt="..."/>
+  <div class="card-body">
+    <h5 class="card-title">{item.title}</h5>
+    <p class="card-text">{item.description}</p>
+    <a href="#" class="btn btn-primary">
                     <Link to={`/fetch/${item._id}`}>View Detail</Link>
-                </div>
+    </a>
+  </div>
+</div>
+            </div>
             ))}
         </div>
+       </div>
+           
     )
 }
 
